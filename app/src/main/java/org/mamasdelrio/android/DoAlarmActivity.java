@@ -47,6 +47,11 @@ public class DoAlarmActivity extends AppCompatActivity implements
 
     alarm.initializeView(R.array.alarms_labels, R.array.alarms_values);
     send.setEnabled(isReadyToBeSent());
+    // missing text <Enviar al Grupo de Whastapp de Mamás del Río> but was <Enviar al Teléfono de Mamás del Río>.
+    send.setText(R.string.send_to_whatsapp_group);
+    // test expects this to be enabled and not focusable
+    alarmLabel.setEnabled(true);
+    alarmLabel.setFocusable(false);
   }
 
   @Override

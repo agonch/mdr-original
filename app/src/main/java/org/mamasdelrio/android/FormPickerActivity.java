@@ -33,6 +33,10 @@ public class FormPickerActivity extends AppCompatActivity {
   @OnClick(R.id.do_pregnancy)
   protected void doPregnancy() {
     Log.d("FormPickerActivity", "pressed doPregnancy");
+    // this is supposed to start the DoPregnancyActivity.class according to test FormPickerActivityTest
+    Intent intent = new Intent();
+    intent.setClass(this, DoPregnancyActivity.class);
+    startActivity(intent);
   }
 
   @SuppressWarnings("unused")
@@ -47,7 +51,7 @@ public class FormPickerActivity extends AppCompatActivity {
   @OnClick(R.id.do_birth)
   protected void doBirth() {
     Intent intent = new Intent();
-    intent.setClass(this, DoRiskActivity.class);
+    intent.setClass(this, DoBirthActivity.class); // was DoRiskActivity, wrong activity
     startActivity(intent);
   }
 

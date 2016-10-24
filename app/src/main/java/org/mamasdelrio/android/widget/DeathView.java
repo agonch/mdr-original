@@ -54,7 +54,9 @@ public class DeathView extends LinearLayout {
   }
 
   private void init() {
-    LayoutInflater.from(getContext()).inflate(R.layout.widget_complications, this,
+    // outcome_death_date and outcome_death_probablecause come
+    //   from widget_death, not from widget_complications
+    LayoutInflater.from(getContext()).inflate(R.layout.widget_death, this,
         true);
     ButterKnife.bind(this);
   }

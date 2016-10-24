@@ -32,6 +32,10 @@
     </activity>
     <activity android:name=".DoOutcomeActivity">
     </activity>
+    <!-- was missing DoAlarmActivity, caught by formPickerLaunchesAlarmsTest -->
+    <activity android:name=".DoAlarmActivity">
+
+    </activity>
     <activity android:name=".LocationFetcherActivity">
     </activity>
   </application>
